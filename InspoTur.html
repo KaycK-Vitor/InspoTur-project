@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="utf-8">
+        <style type="text/css">
+        
+            .container img{
+                width: 100%;
+                height: 100%;
+                filter: brightness(0.37);
+            }
+            .botao{
+                padding: 5px 7px;
+                position: absolute;
+                text-align: center;
+                color: white;
+                background: #003c92;
+                font-family:'Segoe UI';
+                border: 1px solid #001b42;
+                border-radius: 3px;
+                user-select: none;
+                cursor: pointer;
+                top: 65%;
+                right: 47%;
+            }
+            .botao:hover{
+                background: #001b42;
+                transition: background 1s;
+            }
+            .texto{
+                position: absolute;
+                text-align: center;
+                top: 20%;
+                left: 36%;
+            }
+            .site{
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh; /*minimo de altura */
+            }
+            .conteudo{
+                flex-grow: 1; /* Define o quanto o contéudo deve crescer, esse valor por padrão é 1*/
+            }
+
+        </style>
+        <meta charset="utf-8"> 
+        <meta name-"viewport" content="width=device=width, initial-scale=1.0">
         <title>InspoTur - Inicial</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="inspoStyle.css">
     </head>
-    <body>
-        <p>Deseja viajar com segurança, conforto e barato? A InspoTur faz isso para você!</p>
-        <div id="interface">
+    <body class="site">
+        <div class="interface">
+            <p style="margin-top: 95px; text-align: center;">Deseja viajar com segurança, conforto e barato? A InspoTur faz isso para você!</p>
+            <br>
+            <hr style="margin: 40px;">
+            <br>
             <header id="1">
             <nav id="menu">
                 <h1>Menu Principal</h1>
-                <ul type= "1"> 
-                <li><a id="SUGESTÕES" href="sugestoes.html" target="_blank">SUGESTÕES</a></li> 
-                <li><a id="BRASIL" href="br.html" target="_blank">BRASIL</a></li> 
-                <li><a id="MUNDO" href="mundo.html" target="_blank">MUNDO</a></li> 
-                <li><a id="SOBRE" href="sobre.html" target="_blank">SOBRE</a></li> 
-                </ul>
+                     <ul type= "1"> 
+                        <li><a id="SUGESTÕES" href="sugestoes.html" target="_blank">SUGESTÕES</a></li> 
+                        <li><a id="BRASIL" href="br.html" target="_blank">BRASIL</a></li> 
+                        <li><a id="MUNDO" href="mundo.html" target="_blank">MUNDO</a></li> 
+                        <li><a id="SOBRE" href="sobre.html" target="_blank">SOBRE</a></li> 
+                     </ul>
                 </nav>
             </header>    
         </div>
-        <footer>
-            <p> Copyright &copy; &reg; &trade; 2022 - by Kayck Vitor, Anna Beatriz, Maykelly da Cruz e Yasmin de Souza </p>
-            <ul id="icones">
-                <li> <a target="_blank" href="https://github.com/KaycK-Vitor/HTML-codes/tree/main"> <img style="height: 30px; width: 30px;" src="http://pluspng.com/img-png/github-logo-png-white-github-11-icon-free-white-social-icons-512x512.png" alt="GitHub" ></a></li>
-            </ul>
-        </footer>
+        <div class="conteudo">
+            <section class="container">
+                <img src="http://www.entornoturistico.com/wp-content/uploads/2016/03/turismo.jpg" alt="aviao">
+                <div class="texto"> <p style="color:white ;">CONHEÇA ALGUNS LUGARES E SUGESTÕES ABAIXO.</p> </div>
+                <div class="botao"> <a href="sugestoes.html" style="text-decoration: none; color: white;">SAIBA MAIS</a> </div>
+            </section>
+            <br>
+        </div>
+    
+        <div class="rodape">
+            <footer>
+                <ul id="text">
+                    <li> <p> Copyright &copy; &reg; &trade; 2022 - by Kayck Vitor, Anna Beatriz, Maykelly da Cruz e Yasmin de Souza </p> </li>
+                </ul>
+            
+                <ul id="icones">
+                    <li> <a target="_blank" href="https://github.com/KaycK-Vitor/HTML-codes/tree/main"> <img style="height: 30px; width: 30px;" src="http://pluspng.com/img-png/github-logo-png-white-github-11-icon-free-white-social-icons-512x512.png" alt="GitHub" ></a></li>
+                </ul>
+            </footer>
+        </div>
+    
     </body>
 </html>
