@@ -13,7 +13,7 @@ html, body{
 	padding: 0;
 }
 /* Personalizando o rodapé do site e o deixando fixo no final da página */
-footer{
+.rod{
 	background-color: #000;
 	color: white;
 	width: 100%;
@@ -23,43 +23,34 @@ footer{
 	position: absolute;
 	bottom: 0;
 }
-div#interface{
-	text-align: center;
+header#menu{
+    background-color: #24252a;
 }
-nav#menu {
-	position:absolute;
-	right: 60%;
-	top: 45px;
-	width: 8em;
-	margin-top: -2.5em;
+.nav{
+    display: flex;
+    padding: 1.5rem 6rem;
+    justify-content: center;
 }
-
-nav#menu ul {
-	list-style: none;
-	display: flex;
-	
+.menu {
+	position:relative;
+    align-items: center;
 }
-
-nav#menu li{
-	display: inline-block;
-	background-color: white;
-	padding: 12px;
-	margin: 4px;
+.nav-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
-
-nav#menu h1{
-	display: none;
+.item{
+    margin: 15px;
+    text-align: center;
 }
-
-nav#menu a{
-	color: #003c92;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: bolder;
-	font-family: arial;
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
 }
-nav#menu a:hover{
-	text-decoration: overline 3px;
+.nav-link :hover{
+    text-decoration: overline 2px;
 }
 li{
 	list-style:none;
@@ -72,15 +63,20 @@ a{
 	font-weight: bolder;
 }
 .container{
-	width: 1348px;
-	height: 550px;
 	position: relative;
 }
 .regioes{
-	position: absolute;
+	position: relative;
 	text-align: center;
-	top: 17%;;
-	left: 5%;
+	top: 100px;
 }
-
-
+.posicionar{
+    height: 70px;
+    width: 350px;
+    position: relative;
+    margin: 0 auto;
+}
+/* Classe para justificar os paragráfos das introduções das cidades*/
+.justificar{
+    text-align: justify;
+}
