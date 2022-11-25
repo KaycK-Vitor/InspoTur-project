@@ -9,8 +9,9 @@
 
         <style>
             .city{
-                width: 300px;
+                width: 350px;
                 height: 250px;
+                margin-top: 30px;
             }
             li{
                 display: inline;
@@ -22,51 +23,58 @@
 	            position: relative;
                 min-height: 185vh;
             }
+            .a{
+                color: #003c92;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: sans-serif;
+            }
+            .b{
+                margin: 8px;
+                text-align: center;
+            }
         </style>
     </head>
     <body class="site">
         <div class="interface">
-            <div class="regioes">
-                <ul id="regioes">
-                    <p style="text-align:center;">Antes de mais nada, escolha a região do país para que pretende viajar!</p>
-                    <li><a style="padding:3px;" href="">NORTE</a></li>
-                    <li><a style="padding:3px;" href="">NORDESTE</a></li>
-                    <li><a style="padding: 3px;" href="">CENTRO - OESTE</a></li>
-                    <li><a style="padding: 3px; ;" href="">SUDESTE</a></li>
-                    <li><a style="padding: 3px;" href="">SUL</a></li>
-                    <br><br><br>
-                    <p>Pensando em passar as férias no nordeste do país? Conheça as melhores cidades que apresentam as melhores praias, pontos turísticos e preços para o seu bolso!</p>
-                </ul>
-            </div>
+            <header id="menu">
+                <nav class="nav">
+                    <div class="elementos">
+                        <ul> 
+                            <li class="item"><a href="InspoTur.html" target="_blank">Principal</a></li> 
+                            <li class="item"><a href="br.html" target="_blank">Brasil</a></li> 
+                            <li class="item"><a href="mundo.html" target="_blank">Mundo</a></li> 
+                            <li class="item"><a href="sugestoes.html" target="_blank">Sugestões</a></li> 
+                            <li class="item"><a href="sobre.html" target="_blank">Sobre</a></li> 
+                        </ul>
+                    </div>
+            </header>    
             <br>
-            <hr style="margin: 70px;">
-            <br>
-            <header id="1">
-            <nav id="menu">
-                <h1>Menu Principal</h1>
-                <ul type= "1"> 
-                <li><a id="SUGESTÕES" href="sugestoes.html" target="_blank">SUGESTÕES</a></li> 
-                <li><a id="BRASIL" href="br.html">BRASIL</a></li> 
-                <li><a id="MUNDO" href="mundo.html" target="_blank">MUNDO</a></li> 
-                <li><a id="SOBRE" href="sobre.html" target="_blank">SOBRE</a></li> 
+            <p style="text-align: center;">Antes de mais nada, escolha o continente que deseja viajar!</p>
+            <header id="submenu">
+                <ul>
+                    <li class="b"><a href="" class="a">AMÉRICAS</a></li>
+                    <li class="b"><a href="" class="a">ÁSIA</a></li>
+                    <li class="b"><a href="" class="a">EUROPA</a></li>
+                    <li class="b"><a href="" class="a">ÁFRICA</a></li>
                 </ul>
-                </nav>
             </header>    
         </div>
         <div class="conteudo">
             <section class="container">
                 <ul>
-                   <li><div><img src="img.jpg" alt="1" class="city"></div><p>Simples introdução teste</p></li>
-                   <li><img src="img.jpg" alt="2" class="city"> <p>Simples introdução teste</p></li>
-                   <li><img src="img.jpg" alt="3" class="city"> <p>Simples introdução teste</p></li>
-                   <li><img src="img.jpg" alt="4" class="city"> <p>Simples introdução teste</p></li>
-                   <li><img src="img.jpg" alt="5" class="city"> <p>Simples introdução teste</p></li>
+                   <li><div><img src="img.jpg" alt="1" class="city"></div> <div class="posicionar"><p class="justificar">Simples introdução teste</p></div></li>
+                   <li><img src="img.jpg" alt="2" class="city"> <div class="posicionar"><p class="justificar">Simples introdução teste</p></div></li>
+                   <li><img src="img.jpg" alt="2" class="city"> <div class="posicionar"><p class="justificar">Simples introdução teste</p></div></li>
+                   <li><img src="img.jpg" alt="2" class="city"> <div class="posicionar"><p class="justificar">Simples introdução teste</p></div></li>
+                   <li><img src="img.jpg" alt="2" class="city"> <div class="posicionar"><p class="justificar">Simples introdução teste</p></div></li>
                 </ul>
+                <br>
             </section>
         </div>
        
         <div class="rodape">
-            <footer>
+            <footer class="rod">
                 <ul id="text">
                     <li> <p> Copyright &copy; &reg; &trade; 2022 - by Kayck Vitor, Anna Beatriz, Maykelly da Cruz e Yasmin de Souza </p> </li>
                 </ul>
