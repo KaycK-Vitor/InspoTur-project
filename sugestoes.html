@@ -1,149 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <style type="text/css">
-            .container img{
-                width: 100%;
-                height: 100%;
-                filter: brightness(0.37);
-            }
-            .botao{
-                padding: 5px 7px;
-                position: absolute;
-                text-align: center;
-                color: white;
-                background: #003c92;
-                font-family:'Segoe UI';
-                border: 1px solid #001b42;
-                border-radius: 3px;
-                user-select: none;
-                cursor: pointer;
-                top: 65%;
-                right: 47%;
-            }
-            .botao:hover{
-                background: #001b42;
-                transition: background 1s;
-            }
-            .texto{
-                position: absolute;
-                margin: 0;
-                width: 100%;
-                top: 20%;
-            }
-            .site{
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh; /*minimo de altura */
-            }
-            .conteudo{
-                flex-grow: 1; /* Define o quanto o contéudo deve crescer, esse valor por padrão é 1*/
-            }
-            .rodape{
-	            position: relative;
-                min-height: 50vh;
-            }
-            #topo{
-                background-color: #666;
-                padding: 20px;
-                text-align: center;
-                font-size: 18px;
-                color: white;
-            }
-            #meio{
-                display: flex;
-                display: -webkit-flex;
-            }
-            #baixo{
-                background-color: #666;
-                padding: 40px;
-            }
-            article{
-                -webkit-flex: 3px;
-                -ms-flex: 3;
-                flex: 3;
-                background-color: #f1f1f1;
-                padding: 10px;
-            }
-            #submenu{
-                -ms-flex: 1;
-                flex: 1;
-                background-color: #ccc;
-                padding: 20px;
-            }
-            #submenu ul{
-                list-style-type: none;
-                padding: 0;
-            }
-            h1,h2{
-                font-family: Verdana;
-            }
-            a.parceiras{
-                text-decoration: none;
-                font-family: Arial;
-                color: #000;
-                font-weight: bolder;
-            }
-            li.parceiras{
-                display: block;
-            }
-        </style>
-        <meta charset="utf-8"> 
+        <meta charset="utf-8">
         <meta name-"viewport" content="width=device=width, initial-scale=1.0">
-        <title>InspoTur - Inicial</title>
+        <title>Sugestões</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="inspoStyle.css">
     </head>
-    <body class="site">
-        <div class="interface">
-            <header id="menu">
-                <nav class="nav">
-                    <div class="elementos">
-                        <ul> 
-                            <li class="item"><a href="InspoTur.html" target="_blank">Principal</a></li> 
-                            <li class="item"><a href="br.html" target="_blank">Brasil</a></li> 
-                            <li class="item"><a href="mundo.html" target="_blank">Mundo</a></li> 
-                            <li class="item"><a href="sugestoes.html" target="_blank">Sugestões</a></li> 
-                            <li class="item"><a href="sobre.html" target="_blank">Sobre</a></li> 
-                        </ul>
-                    </div>
+    <body>
+        <div id="interface">
+            <header id="1">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type= "1"> 
+                <li><a id="SUGESTÕES" href="sugestoes.html">SUGESTÕES</a></li> 
+                <li><a id="BRASIL" href="br.html" target="_blank">BRASIL</a></li> 
+                <li><a id="MUNDO" href="mundo.html" target="_blank">MUNDO</a></li> 
+                <li><a id="SOBRE" href="sobre.html" target="_blank">SOBRE</a></li> 
+                </ul>
+                </nav>
             </header>    
-            <p style="margin-top: 60px; text-align:center;"> Deseja viajar com segurança, conforto e barato? A InspoTur faz isso para você!</p>
-            <br>
-            <hr style="margin: 10px;">
-            <br>
         </div>
         <div class="conteudo">
-            <section class="container">
-                <img src="http://www.entornoturistico.com/wp-content/uploads/2016/03/turismo.jpg" alt="aviao">
-                <div class="texto"> <p style="color:white ;">CONHEÇA ALGUNS LUGARES E SUGESTÕES ABAIXO.</p> </div>
-                <div class="botao"> <a href="sugestoes.html" style="text-decoration: none; color: white;">SAIBA MAIS</a> </div>
+            <section>
+                
             </section>
-            <br><br><br><br>
-            <header id="topo">
-                <h2> Pensando em viajar? </h2>
-            </header>
-            <section id="meio">
-                <nav id="submenu">
-                    <ul>
-                        <li class="parcerias"><a class="parceirias" href="#"></a></li>
-                        <li class="parcerias"><a class="parceiras" href="#"></a></li>
-                    </ul>
-                </nav>
-                <article>
-                    <h1 style="font-size: 15px;"> Empresas parceiras </h1>
-                    <p style="text-align: justify;"> Uma viagem dever ser um momento de diversão para você e sua família, aliás, a finalidade é esquecer um pouco os problemas, não é mesmo? </p>
-                    <p style="text-align: justify;"> Por isso, deixe que as nossas empresas parceiras fiquem com todas as partes burocráticas  da sua viagem, para garantir a sua melhor experiência! </p>
-                </article>
-            </section>
-            <footer id="baixo">
-
-            </footer>
-            <br>
         </div>
-    
         <div class="rodape">
-            <footer class="rod">
+            <footer>
                 <ul id="text">
                     <li> <p> Copyright &copy; &reg; &trade; 2022 - by Kayck Vitor, Anna Beatriz, Maykelly da Cruz e Yasmin de Souza </p> </li>
                 </ul>
@@ -153,6 +37,5 @@
                 </ul>
             </footer>
         </div>
-    
     </body>
 </html>
