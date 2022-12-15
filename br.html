@@ -43,20 +43,41 @@
                 height: 80vh;
                 width: 30vw;
             }    
+            #lateral1{
+                top: 52%;
+                right: 0;
+                position: absolute;
+            }
+            #lateral2{
+                top: 52%;
+                left: 0;
+                position: absolute;
+            }
+            a.noticia{
+                font-family: 'Segoe UI';
+                color: black;
+                font-weight: normal;
+            }
         </style>
     </head>
     <body class="site">
         <div class="interface">
             <header id="menu">
                 <nav class="nav">
+                    <div class="icone">
+                        <img class="icon" src="imgs/logo.png" alt="">
+                    </div>
                     <div class="elementos">
                         <ul> 
                             <li class="item"><a href="InspoTur.html" target="_blank">Principal</a></li> 
                             <li class="item"><a href="br.html" >Brasil</a></li> 
                             <li class="item"><a href="mundo.html" target="_blank">Mundo</a></li> 
-                            <li class="item"><a href="sugestoes.html" target="_blank">Sugestões</a></li> 
+                            <li class="item"><a href="contato.html" target="_blank">Contato</a></li> 
                             <li class="item"><a href="sobre.html" target="_blank">Sobre</a></li> 
                         </ul>
+                    </div>
+                    <div class="login">
+                        <button><a href="login.html" target="_blank">Entrar</a></button>
                     </div>
             </header>    
             <br>
@@ -77,28 +98,55 @@
                         <ul>
                             <li id="norte"><div><h1>Norte</h1></div></li> 
                             <li><div><img src="imgs/chapada.jpeg" alt="" class="city"></div> <div class="posicionar"><p class="justificar">Paraíso do ecoturismo e das águas cristalinas, a Chapada Diamantina na Bahia se destaca. Além de cidades pequenas com um agito meio-histórico existem várias cachoeiras, cavernas, trilhas, sítios históricos e mirantes. </p></div></li>
-                            <li id="nordeste"><div><h1>Nordeste</h1></div></li>
+                            <li id="nordeste"><div style="padding-top: 30px;" ><h1>Nordeste</h1></div></li>
                             <li><div><img src="imgs/chapada.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">Paraíso do ecoturismo e das águas cristalinas, a Chapada Diamantina na Bahia se destaca. Além de cidades pequenas com um agito meio-histórico, meio-cultural. São 33 cachoeiras, 2 cavernas, 16 sítios históricos, trilhas e mirantes incríveis.</p></div></li>
                             <li><div><img src="imgs/jericoacara.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar">A pequena vila cearense Jericoacara é um primor: rústica e ao mesmo tempo sofisticada, seus inúmeros restaurantes pé na área criam um ambiente super romântico e intimista.</p></div></li>
                             <li id="centro"><div><h1>Centro-Oeste</h1></div></li>
                             <li><div><img src="imgs/tiradentes.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar">Berço da figura nacional José da Silva Xavier, a cidade de Tiradentes em Minas Gerais é repleta de arte barroca e, por isso, considerada um Patrimônio Histórico Nacional.</p></div></li>
                             <li id="sudeste"><div><h1>Sudeste</h1></div></li>
-                            <li id="sul"><div><h1>Sul</h1></div></li>
+                            <li><div><img src="imgs/campos do jordao.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar">Campos do Jordão é uma ótima opção principalmente no inverno! É um lugar cercado de montanhas, influenciado pela cultura europeia, cheio de restaurantes e atividades para pessoas de todas as idades. </p></div></li>
+                            <li><div><img src="imgs/arraial.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar"> Arraial do cabo é um lugar paradisíaco. Para se ter uma ideia, até mesmo a placa de boas vindas mostra que o local é um paraíso, a fama de Caribe Brasileiro não é à toa. </p></div></li>
+                            <li id="sul"><div style="padding-top: 10px;"><h1>Sul</h1></div></li>
+                            <li><div><img src="imgs/gramado.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar"> Gramado possui museus, parques, restaurantes e rotas que são exemplos a fazerem desse local um destino muito apropriado tanto para famílias quanto para casais. Entretanto, é claro que o frio é o principal responsável por atrair os turistas. </p></div></li>
+                            <li><div><img src="imgs/foz do iguacu.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar"> A cidade de Foz do Iguaçu é conhecida em todo o mundo por sua natureza exuberante. Todos os anos, milhões de turistas desembarcam na cidade para apreciar as belezas naturais, como as impressionantes Cataratas do Iguaçu. </p></div></li>
                          </ul>
                     </main>
                     <br>
-                    <aside>
-                        <div style="padding: 10px; right: 20px; border-left: 0.5px solid #666; height: 100%; ">
-                            <br><br><br><br>
-                            <ul>
-                                <li><a class="noticia" href="https://www.bloomberglinea.com.br/2022/12/09/vai-viajar-para-fora-em-2023-precos-de-passagens-devem-subir-cerca-de-4/"> Preço das passagens podem subir em 2023, aproveite em quanto é tempo!</a></li>
-                                <hr>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                            </ul>
-                        </div>
-                    </aside>
+                        <aside id="lateral1">
+                            <div style="padding: 10px; right: 20px; border-left: 0.5px solid #666; height: 100%; ">
+                                <br><br><br><br>
+                                <ul>
+                                    <li><a class="noticia" target="_blank" href="https://g1.globo.com/sc/santa-catarina/noticia/2022/12/06/balneario-camboriu-projeta-crescimento-de-15percent-no-numero-de-turistas-em-relacao-a-alta-temporada-passada.ghtml"> Balneário Camboriú projeta aumento de 15% no número de turistas para esse verão!</a></li><br>
+                                    <br><hr><br>
+                                    <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/pesquisas-e-estatisticas/2022/12/rj-e-santiago-sao-os-favoritos-dos-clientes-da-latam-para-o-verao_193664.html">Rio de Janeiro está entre as cidades mais escolhidas pelos viajantes nesse verão!</a></li><br>
+                                    <br><hr><br>
+                                    <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/aeroportos/2022/12/numero-de-voos-diarios-em-alagoas-aumenta-364-aponta-aena-brasil_193603.html">Número diário de voos saltam 36,4% em Alagoas, sengundo a AENA Brasil. </a></li><br>
+                                    <br><hr><br>
+                                    <li><a class="noticia" href="https://g1.globo.com/turismo-e-viagem/noticia/2022/12/09/passaporte-dos-emirados-arabes-unidos-e-o-mais-poderoso-do-mundo-brasileiro-fica-na-45a-posicao-em-ranking.ghtml">Passaporte brasileiro fica na 45° posição no ranking mundial, Emirados dos Árabes lidera! </a></li><br>
+                                    <br><hr><br>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside id="lateral2">
+                            <div style="padding: 10px; right: 20px; border-right: 0.5px solid #666; height: 100%; ">
+                                <br><br><br><br>
+                                <ul>
+                                    <li><a class="noticia" target="_blank" href="https://www.bloomberglinea.com.br/2022/12/09/vai-viajar-para-fora-em-2023-precos-de-passagens-devem-subir-cerca-de-4/"> Preço das passagens podem subir em 2023, aproveite em quanto é tempo!</a></li><br>
+                                    <br><hr><br>
+                                    <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/parcerias/2022/12/gol-distribuira-latas-de-vinhos-em-voos-internacionais_193654.html">Empresa gol irá distribuir latas de vinhos em voos internacionais, um diferencial!</a></li><br>
+                                    <br><hr><br>
+                                    <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/pesquisas-e-estatisticas/2022/12/companhias-aereas-devem-voltar-a-lucrar-em-2023-segundo-iata_193533.html">Sengundo o LATA, companhias áereas devem voltar a lucrar no ano de 2023!</a></li><br>
+                                    <br><hr><br>
+                                    <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/pesquisas-e-estatisticas/2022/11/brasil-mexico-e-panama-se-destacam-no-mercado-aereo-latino_193290.html">Brasil, México e Panamá se destacam no mercado áereo latino nos últimos anos.</a></li><br>
+                                    <br><hr><br>
+                                </ul>
+                            </div>
+                        </aside> 
                 </section>
+                <div style="text-align: center;">
+                    <h2>De onde somos?</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.704293811606!2d-39.0006390755968!3d-10.53739066002212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70d8b5a872a7047%3A0xf42cb3f029c882a9!2sIFBA-%20Instituto%20Federal%20Da%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1670967237779!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>
         </article>
         <footer class="rod">
             <ul id="text">

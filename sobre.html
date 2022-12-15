@@ -8,17 +8,42 @@
         <link rel="stylesheet" href="inspoStyle.css">
         <style>
             #primeira{
-                background-image: url(imgs/img_2.png) ;
+                background-image: url(imgs/banner-sobre.png!d);
+                background-position: center;
                 height: 400px;
             }
             h1{
                 color: aliceblue;
-                font-size: 35px;
+                font-size: 65px;
                 font-family: 'Segoe UI';
                 border: 0.5px;
                 border-radius: 5px;
-                background: #666;
                 padding: 5px;
+                text-shadow: black 0.05em 0.05em 0.1em
+            }
+            #caixa{
+                height: 500px;
+                background-color: white;
+                text-align: center;
+            }    
+            #contatar{
+                height: 450px;
+                width: 80%;
+                border-bottom: 2px solid black;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%);
+            }
+            .integrantes{
+                border-radius: 50%;
+                height: 145px;
+                width: 135px;
+            }
+            .linha{
+                display: inline-block;
+            }
+            li{
+                list-style: none;
             }
         </style>
     </head>
@@ -26,21 +51,52 @@
         <div class="interface">
             <header id="menu">
                 <nav class="nav">
+                    <div class="icone">
+                        <img class="icon" src="imgs/logo.png" alt="">
+                    </div>
                     <div class="elementos">
                         <ul> 
                             <li class="item"><a href="InspoTur.html" target="_blank">Principal</a></li> 
                             <li class="item"><a href="br.html" target="_blank">Brasil</a></li> 
                             <li class="item"><a href="mundo.html" target="_blank">Mundo</a></li> 
-                            <li class="item"><a href="sugestoes.html" target="_blank">Sugestões</a></li> 
+                            <li class="item"><a href="contato.html" target="_blank">Contato</a></li> 
                             <li class="item"><a href="sobre.html" >Sobre</a></li> 
                         </ul>
                     </div>
+                    <div class="login">
+                        <button><a href="login.html" target="_blank">Entrar</a></button>
+                    </div>
             </header>    
         </div>
+        <br>
         <div class="conteudo">
+            <p style="margin-top: 60px; text-align:center;"> Qual a importância de conhecer nosso trabalho e nos apoiar nos futuros projetos? </p>
+            <br>
+            <hr style="margin: 10px;">
+            <br>
+            <br>
             <section id="primeira">
-                <div style="position: absolute; top: 40%; left: 25px;"><h1>Entre em contato!</h1></div>
+                <div style="position: absolute; top: 70%; left: 25px;"><h1>Conheça-nos</h1></div>
             </section>
+            <div id="caixa">
+                <div id="contatar">
+                    <h2 style="font-family: 'Segoe UI'; font-size: 35px;">Integrantes</h2>
+                    <br>
+                    <ul>
+                        <li style="display: inline; padding: 30px;" ><img class="integrantes" src="imgs/kayck.jpeg" alt=""></li>
+                        <li style="display: inline; padding: 30px;" ><img class="integrantes" src="imgs/bia.jpeg" alt=""></li>
+                        <li style="display: inline; padding: 30px;" ><img class="integrantes" src="imgs/may.jpeg" alt=""></li>
+                        <li style="display: inline; padding: 30px;" ><img class="integrantes" src="imgs/yasmin.jpeg" alt=""></li>
+                    </ul>
+                    <div style="left: 50%; position: relative; width: 400px; transform: translate(-50%);">
+                        <hr><p style="text-align: justify; font-size: 15px;">Somos alunos do curso técnico em Informática do Instituto Federal da Bahia - Euclides da cunha e atuais desenvolvedores da plataforma InspoTur! </p><hr><br><br>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <h2>De onde somos?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.704293811606!2d-39.0006390755968!3d-10.53739066002212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70d8b5a872a7047%3A0xf42cb3f029c882a9!2sIFBA-%20Instituto%20Federal%20Da%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1670967237779!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
         </div>
         <div class="rodape">
             <footer class="rod">

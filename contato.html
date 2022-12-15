@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name-"viewport" content="width=device=width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
+        <link rel="stylesheet" href="inspoStyle.css">
+        <style>
+            #primeira{
+                background-image: url(imgs/img_2.png);
+                height: 400px;
+            }
+            #caixa{
+                height: 500px;
+                background-color: white;
+                text-align: center;
+            }
+            h1{
+                color: aliceblue;
+                font-size: 35px;
+                font-family: 'Segoe UI';
+                border: 0.5px;
+                border-radius: 5px;
+                background: #666;
+                padding: 5px;
+            }
+            #contatar{
+                height: 430px;
+                width: 70%;
+                border-bottom: 2px solid black;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%);
+            }
+            li{
+                list-style: none;
+            }
+            .dados{
+                font-size: 20px;
+                font-family: 'Segoe UI';
+            }
+            #mensagem{
+                background-color: #001b42;
+                text-align: center;
+                height: 550px;
+            }
+            label{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+            }
+            input{
+                border-radius: 4px;
+                height: 25px;
+                width: 240px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="interface">
+            <header id="menu">
+                <nav class="nav">
+                    <div class="icone">
+                        <img class="icon" src="imgs/logo.png" alt="">
+                    </div>
+                    <div class="elementos">
+                        <ul> 
+                            <li class="item"><a href="InspoTur.html" target="_blank">Principal</a></li> 
+                            <li class="item"><a href="br.html" target="_blank">Brasil</a></li> 
+                            <li class="item"><a href="mundo.html" target="_blank">Mundo</a></li> 
+                            <li class="item"><a href="contato.html" target="_blank">Contato</a></li> 
+                            <li class="item"><a href="sobre.html" target="_blank">Sobre</a></li> 
+                        </ul>
+                    </div>
+                    <div class="login">
+                        <button><a href="login.html" target="_blank">Entrar</a></button>
+                    </div>
+            </header>    
+        </div>
+        <div class="conteudo">
+            <section id="primeira">
+                <div style="position: absolute; top: 40%; left: 25px;"><h1>Entre em contato!</h1></div>
+            </section> <br><br>
+            <div id="caixa">
+                <div id="contatar">
+                    <h2 style="font-family: 'Segoe UI'; font-size: 35px;">Contato</h2>
+                    <br>
+                    <ul>
+                        <li><p class="dados">inspostyle@gmail.com</p></li>
+                        <li><p class="dados">+55 (75) 9 8745-9274</p></li>
+                        <li><p class="dados">Av. Almerindo Rehem, 175</p></li>
+                        <li><p class="dados">Euclides da Cunha - BA</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="left: 50%; position: relative; width: 400px; transform: translate(-50%);">
+                <hr><p style="text-align: justify; font-size: 18px;">Nós da InspoTur teremos o prazer em conhecer a sua dúvida, sugestão ou reclamação, não hesite em nos mandar uma mensagem através dos meios de comunicação acima ou abaixo! </p><hr><br><br>
+            </div>
+            <div id="caixa2">
+                <div id="mensagem">
+                    <br>
+                    <h2 style="font-family: 'Segoe UI'; font-size: 35px; color: white;"> Ou se preferir, mande-nos uma mensagem aqui mesmo! </h2>
+                    <form action="">
+                        <label for="nome"> Nome: </label><br>
+                        <input type="text" name="nome" id="nome"><br><br>
+                        <label for="email"> E-mail: </label><br>
+                        <input type="email" name="email" id="email"><br><br>
+                        <label for="telefone"> Telefone </label><br>
+                        <input type="tel" name="telefone" id="telefone"><br><br>
+                        <label for="email"> Mensagem </label><br>
+                        <input placeholder="Digite uma mensagem..." style="height: 75px; width: 500px;" type="text" name="email" id="email"><br><br>
+                        <input style="height: 30px; width: 70px;" type="button" onclick="alert('Obrigado pela mensagem, responderemos em breve!')" value="Enviar">
+                    </form>
+                </div>
+            </div><br>
+            <div style="text-align: center;">
+                <h2>De onde somos?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.704293811606!2d-39.0006390755968!3d-10.53739066002212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70d8b5a872a7047%3A0xf42cb3f029c882a9!2sIFBA-%20Instituto%20Federal%20Da%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1670967237779!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+            </div>
+        </div>
+        <footer class="rod">
+            <ul id="text">
+                <li> <p> Copyright &copy; &reg; &trade; 2022 - by Kayck Vitor, Anna Beatriz, Maykelly da Cruz e Yasmin de Souza </p> </li>
+            </ul>
+        
+            <ul id="icones">
+                <li> <a target="_blank" href="https://github.com/KaycK-Vitor/HTML-codes/tree/main"> <img style="height: 30px; width: 30px;" src="http://pluspng.com/img-png/github-logo-png-white-github-11-icon-free-white-social-icons-512x512.png" alt="GitHub" ></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -10,6 +10,7 @@
             .botao{
                 padding: 5px 7px;
                 position: absolute;
+                margin: 0;
                 text-align: center;
                 color: white;
                 background: #003c92;
@@ -19,7 +20,7 @@
                 user-select: none;
                 cursor: pointer;
                 top: 65%;
-                right: 47%;
+                left: 45%;
             }
             .botao:hover{
                 background: #001b42;
@@ -67,9 +68,6 @@
                 list-style-type: none;
                 padding: 0;
             }
-            h1,h2{
-                font-family: Verdana;
-            }
             a.parceiras{
                 text-decoration: none;
                 font-family: 'Segoe UI';
@@ -78,6 +76,19 @@
             }
             li.parceiras{
                 display:list-item;
+            }
+            div.bloco {
+                width: 28%;
+                background-color: #001b42;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            div.container {
+                text-align: center;
+                padding: 10px 20px;
             }
         </style>
         <meta charset="utf-8"> 
@@ -90,14 +101,20 @@
         <div class="interface">
             <header id="menu">
                 <nav class="nav">
+                    <div class="icone">
+                        <img class="icon" src="imgs/logo.png" alt="">
+                    </div>
                     <div class="elementos">
                         <ul> 
                             <li class="item"><a href="InspoTur.html" >Principal</a></li> 
                             <li class="item"><a href="br.html" target="_blank">Brasil</a></li> 
                             <li class="item"><a href="mundo.html" target="_blank">Mundo</a></li> 
-                            <li class="item"><a href="sugestoes.html" target="_blank">Sugestões</a></li> 
+                            <li class="item"><a href="contato.html" target="_blank">Contato</a></li> 
                             <li class="item"><a href="sobre.html" target="_blank">Sobre</a></li> 
                         </ul>
+                    </div>
+                    <div class="login">
+                        <button><a href="login.html" target="_blank">Entrar</a></button>
                     </div>
             </header>    
             <p style="margin-top: 60px; text-align:center;"> Deseja viajar com segurança, conforto e barato? A InspoTur faz isso para você!</p>
@@ -110,7 +127,7 @@
                 <section class="container">
                     <img src="http://www.entornoturistico.com/wp-content/uploads/2016/03/turismo.jpg" alt="aviao">
                     <div class="texto"> <p style="color:white ;">CONHEÇA ALGUNS LUGARES E SUGESTÕES ABAIXO.</p> </div>
-                    <div class="botao"> <a href="sugestoes.html" style="text-decoration: none; color: white;">SAIBA MAIS</a> </div>
+                    <div class="botao"> <a href="br.html" style="text-decoration: none; color: white;">SAIBA MAIS</a> </div>
                 </section>
                 <br><br><br><br>
                 <header id="topo">
@@ -123,7 +140,6 @@
                             <li class="parcerias"><a class="parceiras" href="https://www.decolar.com/pacotes/?adjust_adgroup=111868926685&adjust_campaign=11667726605&adjust_t=esobv7_ffxd4s_3fh53i&adjust_creative=481239734602&adjust_tracker_limit=1000000000&gclid=Cj0KCQiAnNacBhDvARIsABnDa68nqBRfTTDdA9yNlthX5Lx0Ut_l311uCRjjaxG0LrI-1k8QMsZt0doaAvzbEALw_wcB&mktdata=accountid%3D5481741168%26pr%3DX%26cc%3DBR%26adjust_t%3Desobv7_ffxd4s_3fh53i%26kw%3D%26c%3D481239734602%26mt%3D%26n%3Dg%26p%3D%26ap%3D%26d%3Dc%26dm%3D%26targetid%3Ddsa-1029701035565%26campaignid%3D11667726605%26adgroupid%3D111868926685%26ExperimentId%3D%26locationid%3D1031957%26adjust_adgroup%3D111868926685%26adjust_campaign%3D11667726605%26adjust_creative%3D481239734602%26key%3DUT81AK9JAFEGJ4D69OVO6J673E%26adjust_tracker_limit%3D1000000000%26gclid%3DCj0KCQiAnNacBhDvARIsABnDa68nqBRfTTDdA9yNlthX5Lx0Ut_l311uCRjjaxG0LrI-1k8QMsZt0doaAvzbEALw_wcB%26id%3D20221211211836142478812246005084%26trackeame_user_id%3D121473411EC7166913207998211a83cd5-dce6-40a4-8146-69013da5a34620893755">Decolar</a></li>
                             <li class="parcerias"><a class="parceiras" href="https://www.cvc.com.br/">CVC</a></li>
                             <li class="parcerias"><a class="parceiras" href="https://123milhas.com/viagens/agencia-de-viagens">123 Milhas</a></li>
-    
                         </ul>
                     </nav>
                     <article>
@@ -135,8 +151,32 @@
                 <footer id="baixo">
 
                 </footer>
+                <br><br><br><hr style="margin: 30px;"><br><br><br>
+                <div>
+                    <div class="bloco">
+                        <img src="imgs/viagem1.jpg.crdownload" alt="Viagem" style="width:100%;">
+                        <div class="container">
+                            <p style="color: white;">Viajar tira o seu estresse diário</p>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <img src="imgs/viagem2.jpg" alt="Viagem" style="width: 100%;">
+                        <div class="container">
+                            <p style="color: white;">Além de trazer experiências únicas</p>
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <img src="imgs/viagem3.png" alt="Viagem" style="width: 100%;">
+                        <div class="container">
+                            <p style="color: white;">Colecionando os melhores momentos</p>
+                        </div>
+                    </div>
+                </div>    
                 <br>
-            </div>
+                <div style="text-align: center;">
+                    <h2>De onde somos?</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.704293811606!2d-39.0006390755968!3d-10.53739066002212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70d8b5a872a7047%3A0xf42cb3f029c882a9!2sIFBA-%20Instituto%20Federal%20Da%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1670967237779!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>  
         </article>
         <footer class="rod">
             <ul id="text">

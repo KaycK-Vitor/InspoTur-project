@@ -44,9 +44,19 @@
                 color: #003c92;
                 font-family: 'Segoe UI';
             }
-            .noticia{
-                color: black;
+            #lateral1{
+                top: 52%;
+                right: 0;
+                position: absolute;
+            }
+            #lateral2{
+                top: 52%;
+                left: 0;
+                position: absolute;
+            }
+            a.noticia{
                 font-family: 'Segoe UI';
+                color: black;
                 font-weight: normal;
             }
         </style>
@@ -55,14 +65,20 @@
         <div class="interface">
             <header id="menu">
                 <nav class="nav">
+                    <div class="icone">
+                        <img class="icon" src="imgs/logo.png" alt="">
+                    </div>
                     <div class="elementos">
                         <ul> 
                             <li class="item"><a href="InspoTur.html" target="_blank">Principal</a></li> 
                             <li class="item"><a href="br.html" target="_blank">Brasil</a></li> 
                             <li class="item"><a href="mundo.html">Mundo</a></li> 
-                            <li class="item"><a href="sugestoes.html" target="_blank">Sugestões</a></li> 
+                            <li class="item"><a href="contato.html" target="_blank">Contato</a></li> 
                             <li class="item"><a href="sobre.html" target="_blank">Sobre</a></li> 
                         </ul>
+                    </div>
+                    <div class="login">
+                        <button><a href="login.html" target="_blank">Entrar</a></button>
                     </div>
             </header>    
             <br>
@@ -83,35 +99,58 @@
                 <section>
                     <main>
                         <ul>
-                            <li id="américa"><h1> Américas </h1></li>
+                            <li id="américa"><div><h1> Américas </h1></div></li>
                             <li><div><img src="imgs/bahamas.jpeg" alt="1" class="city"></div> <div class="posicionar"><p class="justificar">Bahamas é um país da América Central formado por cerca de 700 ilhas no Oceano Atlântico. As belas paisagens naturais das ilhas, aliadas ao clima quente, atraem milhões de turistas ao país.</p></div></li>
                             <li><div><img src="imgs/holywood.jpeg" alt="2" class="city"></div> <div class="posicionar"><p class="justificar">Hollywood é um distrito da cidade de Los Angeles, na Califórnia. Você pode visitar o letreiro, além da Walk Of Fame, um enorme calçadão com os principais nomes do cinema, artes e música do mundo.</p></div></li>
                             <li><div><img src="imgs/new york.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">Ótimo lugar para passeios, existem dois pontos turísticos essenciais para conhecer em Nova York, Estátua da Liberdade, que fica em Liberty Island. E Times Square, é um encontro da Broadway com a Sétima Avenida.</p></div></li>
                             <li><div><img src="imgs/peru.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">Peru é uma caixinha de surpresas. É um país de belezas naturais exuberantes, lindas montanhas da Cordilheira dos Andes, gastronomia de excelente qualidade em Lima e sítios arqueológicos únicos como o Machu Picchu.</p></div></li>
-                            <li id="ásia"><h1> Ásia </h1></li>
+                            <li id="ásia"><div><h1> Ásia </h1></div></li>
                             <li><div><img src="imgs/bali.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">A única ilha da Indonésia é o lugar perfeito para se desligar do ritmo acelerado da vida urbana e descansar. A ilha tem belos campos de arroz, paisagens bucólicas, praias e uma cultura exótica, ou seja, é realmente uma experiência inesquecível.</p></div></li>
                             <li><div><img src="imgs/dubai.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">Dubai é a maior cidade dos Emirados Árabes Unidos, conhecida pelos shoppings de luxo, pela arquitetura ultramoderna. Uma atração turísticas bastante conhecida de Dubai é o Burj Khalifa.</p></div></li>
                             <li><div><img src="imgs/japao.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">Exemplo no modelo de organização e modernidade, o país é dotado de infinitas belezas naturais e arquitetônicas. Pessoas educadas e sorridentes que estão sempre prontas para te receber, sem falar na comida hein!.</p></div></li>
-                            <li id="europa"><h1> Europa </h1></li>;
+                            <li id="europa"><div><h1> Europa </h1></div></li>;
                             <li><div><img src="imgs/dublin.jpeg" alt="2" class="city"></div><div class="posicionar"><p class="justificar">A capital da Irlanda é uma metrópole culturalmente vibrante, com seu passado cheio de história, mas que não deixou de evoluir com o passar do tempo, com tradições e espírito jovial que conquista o visitante desde o primeiro momento.</p></div></li>
                             <li><div><img src="imgs/ibiza.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar">A cidade de Ibiza, Espanha, é uma das ilhas Baleares. Conhecida por ser um destino praiano com uma ótima infraestrutura turística, belas praias e festas regadas de músicas.</p></div></li>
                             <li><div><img src="imgs/grecia.jpeg" alt="2" class="city"> </div><div class="posicionar"><p class="justificar">É na capital, Atenas, que o visitante poderá conhecer de perto a Acrópole mais famosa do mundo. Além disso, não podem deixar de incluir no roteiro as paradisíacas ilhas gregas, a exemplo de Mykonos, Santorini e Creta.</p></div></li>
-                            <li id="áfrica"><h1> África </h1></li>
+                            <li id="áfrica"><div><h1> África </h1></div></li>
                         </ul>
                     </main>
                     <br>
-                    <aside>
+                    <aside id="lateral1">
                         <div style="padding: 10px; right: 20px; border-left: 0.5px solid #666; height: 100%; ">
                             <br><br><br><br>
                             <ul>
-                                <li><a class="noticia" href="https://www.bloomberglinea.com.br/2022/12/09/vai-viajar-para-fora-em-2023-precos-de-passagens-devem-subir-cerca-de-4/"> Preço das passagens podem subir em 2023, aproveite em quanto é tempo!</a></li>
-                                <hr>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/destinos/luxo/2022/12/eua-sao-preferencia-internacional-dos-viajantes-brasileiros-de-luxo_193573.html"> EUA são preferência internacional dos viajantes brasileiros de luxo, preços salgados hein! </a></li><br>
+                                <br><hr><br>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/pesquisas-e-estatisticas/2022/12/transporte-de-passageiros-internacionais-em-2021-foi-similar-a-1992_193545.html">Transporte de passageiros internacionais em 2021 foi similar com o de 1992. Entenda!</a></li><br>
+                                <br><hr><br>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/empresas/2022/12/gol-retoma-voos-do-nordeste-para-miami-e-buenos-aires_193482.html">Gol retoma voos do nordeste para Miami e Buenos Aires...</a></li><br>
+                                <br><hr><br>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/empresas/2022/11/gol-tera-77-voos-da-argentina-para-o-brasil-no-verao_193061.html">Gol terá 77 voos da argentina para o Brasil nesse verão!</a></li><br>
+                                <br><hr><br>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside id="lateral2">
+                        <div style="padding: 10px; right: 20px; border-right: 0.5px solid #666; height: 100%; ">
+                            <br><br><br><br>
+                            <ul>
+                                <li><a class="noticia" target="_blank" href="https://www.bloomberglinea.com.br/2022/12/09/vai-viajar-para-fora-em-2023-precos-de-passagens-devem-subir-cerca-de-4/"> Preço das passagens podem subir em 2023, aproveite em quanto é tempo!</a></li><br>
+                                <br><hr><br>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/parcerias/2022/12/gol-distribuira-latas-de-vinhos-em-voos-internacionais_193654.html">Empresa gol irá distribuir latas de vinhos em voos internacionais, um diferencial!</a></li><br>
+                                <br><hr><br>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/pesquisas-e-estatisticas/2022/12/companhias-aereas-devem-voltar-a-lucrar-em-2023-segundo-iata_193533.html">Sengundo o LATA, companhias áereas devem voltar a lucrar no ano de 2023!</a></li><br>
+                                <br><hr><br>
+                                <li><a class="noticia" target="_blank" href="https://www.panrotas.com.br/aviacao/pesquisas-e-estatisticas/2022/11/brasil-mexico-e-panama-se-destacam-no-mercado-aereo-latino_193290.html">Brasil, México e Panamá se destacam no mercado áereo latino nos últimos anos.</a></li><br>
+                                <br><hr><br>
                             </ul>
                         </div>
                     </aside>
                 </section>
+                <div style="text-align: center;">
+                    <h2>De onde somos?</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.704293811606!2d-39.0006390755968!3d-10.53739066002212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70d8b5a872a7047%3A0xf42cb3f029c882a9!2sIFBA-%20Instituto%20Federal%20Da%20Bahia!5e0!3m2!1spt-BR!2sbr!4v1670967237779!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
+                </div>
         </article>
             <footer class="rod">
                 <ul id="text">
